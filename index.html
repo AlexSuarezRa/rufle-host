@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://alexsuarezra.github.io/rufle-host/ruffle.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.addEventListener("load", (event) => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            const container = document.getElementById("container");
+            container.appendChild(player);
+            player.load("https://drive.google.com/uc?export=download&id=1Gi54xv3rA1hJk8J9yAqmdgPIY3flQab2");
+        });
+    </script>
+</body>
+</html>
